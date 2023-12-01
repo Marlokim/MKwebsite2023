@@ -1,0 +1,205 @@
+.para {
+  line-height: 1.5;
+}
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+section {
+  display: flex;
+}
+flex: 200px;
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: silver;
+  height: 110px;
+}
+h2 {
+  text-align: center;
+  color: navy;
+  padding: 0.9%;
+}
+
+h4 {
+  text-align: left;
+  color: red;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: ;
+}
+form {
+  padding: 10px;
+}
+h3 {
+  padding: 10px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: #333;
+  transition: all 0.4s ease-in;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1.25rem;
+
+  padding: 0.13%;
+  color: black;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  min-height: calc(100vh - 4.25rem);
+  place-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+/* Write your CSS below */
+
+#slider {
+  position: relative;
+  width: 650px;
+  height: 650px;
+  margin-left: 5%;
+}
+#slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+#slider img.active {
+  opacity: 1;
+}
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #717171;
+  color: #f1f1f1;
+  font-size: 32px;
+  font-stretch: condensed;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  background-color: steelblue;
+}
+button#prev {
+  left: -35px;
+  padding: 7px 17px 7px 15px;
+}
+
+button#next {
+  right: -35px;
+  padding: 7px 15px 7px 17px;
+}
+p2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+p3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+p6 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  text-align: center;
+  margin-top: 1.25rem;
+}
+h4 {
+  text-align: center;
+}
+body {
+  background-image: url(https://assets.codepen.io/10676836/abstract-blur-gym-room.jpg?format=auto);
+  background-size: 164%;
+}
