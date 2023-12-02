@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - MKwebsite page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
@@ -12,6 +22,11 @@
 
   <header>
     <h1>MK Wellness Academy</h1>
+    <ul>
+      <li class="currentmenu0">Home</li>
+      <li class="menu1">About</li>
+      <li class="menu2">Contact</li>
+    </ul>
     <h4>Coming Soon 2024!</h4>
 
   </header>
@@ -73,34 +88,70 @@
     </article>
   </section>
 
-  <h3>Contact</h3>
-  <form action="/action_page.php">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname"><br>
-    <label for="email">Email:</label><br>
-    <input type="text" id="email" name="email"></br>
-    <label for="pnumber">Phone Number:</label><br>
-    <input type="number" id="pnumber" name="pnumber"></br>
+  <h3>Let us contact you!</h3>
+  <main class="container god">
 
-    <input type="submit" value="Drop it">
-  </form>
+    <div id="form-submitted-msg">Form successfully submitted!</div>
+
+    <form id="exampleForm" novalidate>
+      <div class="input-group">
+        <label for="firstName" class="form-label">First name </label>
+        <input type="text" id="firstName" name="firstName" class="form-control" required>
+        <small class="error-msg invalid-feedback">Required</small>
+      </div>
+      <div class="input-group">
+        <label for="lastName" class="form-label">Last name </label>
+        <input type="text" id="lastName" name="lastName" class="form-control" required>
+        <small class="error-msg invalid-feedback">Required</small>
+      </div>
+      <div class="input-group">
+        <label for="email" class="form-label">Email </label>
+        <input type="email" id="email" name="email" class="form-control" required>
+        <small class="error-msg invalid-feedback">Required</small>
+      </div>
+
+      <div class="input-group radio">
+        <div class="form-check">
+          <input type="radio" id="personal" name="purpose" value="Personal" class="form-check-input" required>
+          <label for="personal" class="form-check-label">Personal Email</label>
+          <small class="error-msg invalid-feedback">Required</small>
+        </div>
+
+        <div class="form-check">
+          <input type="radio" id="business" name="purpose" value="Business" class="form-check-input" required>
+          <label for="business" class="form-check-label">Business Email</label>
+          <small class="error-msg invalid-feedback">Required</small>
+        </div>
+      </div>
+      <div class="input-group checkbox form-check">
+        <input type="checkbox" name="subscribe" id="subscribeYes" class="form-check-input" required>
+        <label for="subscribeYes" class="form-check-label">Subscribe to our newsletter?</label>
+        <small class="error-msg invalid-feedback">Required</small>
+      </div>
+      <div class="form-btns">
+        <button type="submit" class="btn btn-primary submit" disabled>SUBMIT</button>
+        <button type="reset" class="btn btn-secondary">CLEAR FORM</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
 </body>
-<footer>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <body>
+<h3>Hit me up on Social Media!</h3>
 
-    <h3>Hit me up on Social Media!</h3>
-
-    <!-- Add font awesome icons -->
-    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-    <a href="https://twitter.com/" class="fa fa-twitter"></a>
-    <a href="https://www.google.com/" class="fa fa-google"></a>
-    <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
-    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
 </footer>
 
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
 </html>
